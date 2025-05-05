@@ -1,0 +1,168 @@
+.name{
+    a{text-decoration: none;
+    color:rgb(78, 75, 75);
+}
+}
+
+
+
+
+body{
+    margin: 0px;
+    font-family: "Inter", sans-serif;
+    background: beige;
+    }
+    .wrap{
+        margin: 4em;
+    }
+.name{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+    font-size: 16rem;
+    display: flex;
+    transition: 0.3s;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+nav ul{
+    padding: 20px;
+    flex: 1.236;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 100px;
+    
+    list-style: none;
+    
+
+    li input{
+        border-radius: 22px;
+        display: flex;
+        border: none 0.1px  ;
+        background: rgb(233, 233, 174);
+       font-family: "Inter", sans-serif;
+       font-size: medium;
+       flex: 0.2r;
+       height: 2em;
+       
+
+
+    }
+   li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: 0.5s;
+
+   }
+}  
+   main{
+    display: flex;
+    margin-top: 4em;
+    margin-bottom: 5em;
+   }
+ .left{
+    padding-right: 3em;
+    width: 40%;
+    h1{
+        width: 45%;
+        font-size: 3rem;
+    }
+    p{
+        width: 85%;
+    }
+    .cta-btns{
+        display: flex;
+        gap: 1em;
+        margin-top: 2em;
+       a{
+        text-decoration: none;
+        color: black;
+        background-color: lightgreen;
+        padding: 1em;
+        border-radius: 1em;
+        transition: 0.5s;
+       } 
+    }
+ }
+.right{
+   display:grid;
+   grid-template-columns: repeat(4, auto);
+   width: 50%;
+   grid-template-areas: 
+   "it1 it1 it2 it2"
+   "it3 it3 it3 it3";
+   gap: 2em;
+}
+.food-1{
+    grid-area: it1;
+   
+   
+}
+.food-2{
+    grid-area: it2;
+  
+}
+.food-3{
+    grid-area: it3;
+    
+   
+    
+}
+.food img{
+    width: 100%;
+ 
+    object-fit: cover;
+    border-radius: 3em;
+    
+}
+
+.footer{
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    color: rgb(204, 129, 37);
+}
+.search-bar:focus{
+    outline: none;
+}
+.search-bar::placeholder{
+   
+    
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    font-size: 2.2rem;
+    transition: 0.5s;
+}
+.name:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.cta-btns a:hover{
+    opacity: 0.5;
+    transform: translateX(10%);
+    transition: 0.5s;
+   
+}
+.food:hover{
+    transition: 0.5s;
+    transform: translateY(5%);
+
+}
+.food{
+    transition: 0.5s;
+}
+.left img{
+    width: 60%;
+    margin-top: 2em;
+    border-radius: 2em;
+  
+
+}
